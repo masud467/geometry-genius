@@ -12,6 +12,19 @@ function calculatePentagonArea(){
     setInnerText('pentagon-area', area)
 }
 
+function calculateEllipseArea(){
+    const majorAxis = getInputFieldValue('ellipse-semi-major-axis')
+    console.log(majorAxis)
+
+    const minorAxis = getInputFieldValue('ellipse-semi-minor-axis')
+    console.log(minorAxis)
+
+    const area = 3.14 * majorAxis * minorAxis
+    console.log('area of ellipse', area)
+
+    setInnerText('ellipse-area', area)
+}
+
 
 function getInputFieldValue(fieldValueId){
     const fieldValue = document.getElementById(fieldValueId);
