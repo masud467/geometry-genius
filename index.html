@@ -99,10 +99,19 @@
             <div class="card  bg-base-100 shadow-xl">
                 <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                 <div class="card-body">
-                  <h2 class="card-title">pentagon</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <h2 class="card-title justify-center">pentagon</h2>
+                  <p class="text-2xl text-center">Area (A) = 0.5 * p * a</p>
+                  <div>
+                    <input class="w-24 text-2xl p-2 rounded-sm border-2" type="text" name="" id="pentagon-perimeter" placeholder="p">
+                    <span>cm</span>
+                    <input class="w-24 text-2xl p-2 rounded-sm border-2" type="text" name="" id="pentagon-apothem" placeholder="a">
+                    <span>cm</span>
+                  </div>
+                  <div>
+                    <p class="text-2xl">Area: <span id="pentagon-area">0</span> <span>cm<sup>2</sup></span></p>
+                  </div>
                   <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
+                    <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">calculate</button>
                   </div>
                 </div>
               </div>
@@ -128,5 +137,6 @@
   <script src="scripts/rectangle-area.js"></script>
   <script src="scripts/parallelogram-area.js"></script>
   <script src="scripts/rhombus.js"></script>
+  <script src="scripts/pentagon-ellipse.js"></script>
 </body>
 </html>
